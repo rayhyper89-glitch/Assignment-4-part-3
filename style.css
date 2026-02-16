@@ -1,0 +1,74 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Semantic Sections */
+header {
+    background-color: #0033cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Reusable Classes */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Images */
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ===== Media Query ===== */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
